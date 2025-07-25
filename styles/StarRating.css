@@ -1,0 +1,25 @@
+.star-rating {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.star {
+  font-size: 0.8125rem;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #000000;
+}
+
+.star.half {
+  background: linear-gradient(90deg, #DEA453 50%, #E1E1E1 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.star.empty {
+  color: #E1E1E1;
+}

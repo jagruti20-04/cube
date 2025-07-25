@@ -1,0 +1,122 @@
+.subscription-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.subscription-option {
+  border: 1px solid #B8B8B8;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.subscription-option:first-child {
+  border-radius: 6px 6px 0 0;
+}
+
+.subscription-option:last-child {
+  border-radius: 0 0 6px 6px;
+  border-top: none;
+}
+
+.subscription-option.recommended {
+  position: relative;
+}
+
+.option-header {
+  background-color: #A2845E;
+  padding: 0.625rem 1.5rem;
+  border-radius: 6px 6px 0 0;
+}
+
+.recommended-badge {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.265rem;
+  line-height: 1.2rem;
+  color: #FFFFFF;
+  float: centre;
+}
+
+.option-content {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.radio-group input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  appearance: none;
+  background-color: #F8F8F8;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.radio-group label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.9px;
+  color: #322D2D;
+  cursor: pointer;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.current-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.9px;
+  color: #322D2D;
+}
+
+.original-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.9px;
+  color: #B8B8B8;
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .option-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .pricing {
+    align-self: flex-end;
+  }
+}

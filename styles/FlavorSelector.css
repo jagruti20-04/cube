@@ -1,0 +1,139 @@
+.flavor-selector {
+  margin: 0.6875rem 0;
+}
+
+.flavor-selector h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.01rem;
+  line-height: 1.185rem;
+  color: #322D2D;
+  margin-bottom: 0.5rem;
+}
+
+.flavor-options {
+  display: flex;
+  gap: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.flavor-option {
+  position: relative;
+  width: 127px;
+  height: 146px;
+  background-color: #F9F9F9;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+}
+
+.flavor-option:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flavor-option.selected {
+  border-color: #000000;
+  box-shadow: 0 0 0 1px #000000;
+}
+
+.best-seller-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #A2845E;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 0.46rem;
+  line-height: 0.54rem;
+  padding: 0.35rem 0.31rem;
+  border-radius: 5px 0 5px 0;
+}
+
+.flavor-radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.flavor-radio input[type="radio"] {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #919798;
+  border-radius: 50%;
+  appearance: none;
+  background-color: #F8F8F8;
+  position: relative;
+  cursor: pointer;
+}
+
+.flavor-option.selected .flavor-radio input[type="radio"] {
+  border-color: #000000;
+}
+
+.flavor-option.selected .flavor-radio input[type="radio"]::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5.5px;
+  height: 5.3px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+.flavor-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 0.825rem;
+  line-height: 0.97rem;
+  color: #919798;
+  margin-bottom: 0.5rem;
+}
+
+.flavor-option.selected .flavor-name {
+  color: #000000;
+}
+
+.flavor-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flavor-image img {
+  width: 39px;
+  height: auto;
+  object-fit: contain;
+}
+
+.secondary-flavor {
+  margin-top: 1rem;
+}
+
+.secondary-flavor h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.01rem;
+  line-height: 1.185rem;
+  color: #322D2D;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .flavor-options {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .flavor-option {
+    width: 100px;
+    height: 120px;
+  }
+}

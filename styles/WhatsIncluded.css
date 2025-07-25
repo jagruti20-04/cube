@@ -1,0 +1,91 @@
+.whats-included {
+  margin: 1rem 0;
+}
+
+.whats-included h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.01rem;
+  line-height: 1.185rem;
+  color: #322D2D;
+  margin-bottom: 1rem;
+}
+
+.delivery-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.delivery-option {
+  flex: 1;
+  border: 1px solid #919798;
+  border-radius: 6px;
+  padding: 0.75rem;
+  background-color: #FFFFFF;
+}
+
+.delivery-option h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.01rem;
+  line-height: 1.185rem;
+  color: #6F7577;
+  margin-bottom: 1rem;
+}
+
+.included-items {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 146px;
+}
+
+.included-items img {
+  width: 58px;
+  height: auto;
+  object-fit: contain;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.benefit-icon {
+  width: 12px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.benefit-item span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: #322D2D;
+}
+
+@media (max-width: 768px) {
+  .delivery-options {
+    flex-direction: column;
+  }
+  
+  .included-items {
+    min-height: 100px;
+  }
+  
+  .included-items img {
+    width: 40px;
+  }
+}
