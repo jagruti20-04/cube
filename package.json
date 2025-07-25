@@ -4,11 +4,19 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
      "dev": "vite",
   "build": "vite build",
   "netlify-build": "npm install --package-lock-only && npm audit fix --force && vite build --force",
   "preview": "vite preview",
   "test": "echo \"Error: no test specified\" && exit 1"
+=======
+    "dev": "vite",
+    "preinstall": "npx npm-force-resolutions",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> c86f22b63582360466829f6f5c1692a1c3f41ee5
   },
   "dependencies": {
     "react": "^19.1.0",
