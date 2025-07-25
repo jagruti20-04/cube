@@ -19,3 +19,6 @@ npm install
 npm run dev
 
 # 5. Open in browser: http://localhost:3000
+
+# 6
+live link https://voluble-centaur-738a8e.netlify.app/
