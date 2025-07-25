@@ -6,7 +6,7 @@
  "scripts": {
   "dev": "vite",
   "build": "vite build",
-  "netlify-build": "npm install --package-lock-only && npm audit fix --force && vite build --force",
+  "netlify-build": "npm install --package-lock-only && npm audit fix --force && vite build",
   "preview": "vite preview",
   "test": "echo \"Error: no test specified\" && exit 1"
 },
