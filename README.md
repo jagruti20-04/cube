@@ -22,3 +22,5 @@ npm run dev
 
 # 6
 live link https://voluble-centaur-738a8e.netlify.app/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/078d388c-de7f-4191-8548-90f9751292f7/deploy-status)](https://app.netlify.com/projects/cubeassi/deploys)
